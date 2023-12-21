@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <h1 id="title">Ryan's Survey
+    </h1>
+    <p id="description">The following survey will just ask a few
+         questions about yourself to help us gather information.
+        </p>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<form id="survey-form">
+    <fieldset>
+<label id="name-label">Name:</label>
+<input required id="name" type="text" placeholder="Enter your name"/>
+</fieldset>
+<fieldset>
+<label id="email-label">Email:</label>
+<input required id="email" type="email" placeholder="Enter your email"/>
+</fieldset>
+<fieldset>
+<label id="number-label">Age(optional)</label>
+<input id="number" type="number" min="1" max="150" placeholder="Age"/>
+</fieldset>
+<fieldset>
+    <label id="Continent">Which continent are you from?
+<select id="dropdown"> <option value="">(Select one)</option>
+    <option value="1">North America</option>
+    <option value="2">South America</option>
+    <option value="3">Antarctica</option>
+    <option value="4">Africa</option>
+    <option value="5">Europe</option>
+    <option value="6">Asia</option>
+    <option value="7">Oceania</option>
+</select>
+</label>
+</fieldset>
+<fieldset>
+<legend>Do you play video games ?</legend>
+<label>Yes
+<input type="radio" id="name" value="yes" name="Games"/></label>
+<label>No<input type="radio" id="name" value="no" name="Games"/></label>
+</fieldset>
+<fieldset><label>If yes, which category do you play the most?
+<input type="checkbox" value="1"/>
+<input type="checkbox" value="2"/>
+<input type="checkbox" value="3"/>
+<input type="checkbox" value="4"/>
+<input type="checkbox" value="5"/>
+<input type="checkbox" value="6"/>
+<input type="checkbox" value="7"/>
+<input type="checkbox" value="8"/>
+<input type="checkbox" value="9"/>
+</label>
+</fieldset>
+<fieldset>
+<textarea placeholder="If you would like to, you can share your favourite
+ games."></textarea>
+</fieldset>
+<fieldset>
+ <input type="submit" value="Submit" id="submit"/>
+</fieldset>
+</form>
+</body>
+</html>
